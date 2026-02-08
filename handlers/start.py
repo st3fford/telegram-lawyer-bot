@@ -20,6 +20,6 @@ async def start_handler(message: Message):
         "📞 Вкажіть ваш номер телефону для зв'язку.\n\n"
         "⚠️ Важливо: без номера телефону ми не зможемо "
         "оперативно розглянути ваш запит.",
-        reply_markup=main_menu()
+        reply_markup=main_menu
     )
 
