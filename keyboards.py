@@ -1,13 +1,13 @@
-# keyboards.py
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
+main_menu = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="📅 Запис на консультацію")],
+        [KeyboardButton(text="📄 Зразки заяв")],
+        [KeyboardButton(text="👤 Зв’язок з оператором")],
+        [KeyboardButton(text="🤖 Юридичний GPT")],
+        [KeyboardButton(text="ℹ️ Про бота")]
+    ],
+    resize_keyboard=True
+)
 
-def main_menu():
-    return ReplyKeyboardMarkup(
-        keyboard=[
-            [KeyboardButton(text="📞 Поділитись номером", request_contact=True)],
-            [KeyboardButton(text="👨‍⚖️ Зв'язок з оператором")],
-            [KeyboardButton(text="📅 Записатись на консультацію")],
-        ],
-        resize_keyboard=True
-    )

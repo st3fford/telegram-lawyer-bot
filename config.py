@@ -1,8 +1,7 @@
-# config.py
+import os
 
-BOT_TOKEN = "8011869180:AAE89pyqUOGsD4VcGHFCpGt0gxWguU3JBGo"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
-OPERATORS = {
-    641603995,  # твій Telegram ID
-    # можеш додати ще ID через кому
-}
+ADMIN_IDS = [641603995]  # твій Telegram ID
+
+DATABASE_URL = os.getenv("postgresql://postgres:qgwHHHyQXPKPlSEzYvGCicmKOeTOjfgL@postgres.railway.internal:5432/railway")
