@@ -5,9 +5,7 @@ main_menu = ReplyKeyboardMarkup(
         [KeyboardButton(text="📅 Запис на консультацію")],
         [KeyboardButton(text="📄 Зразки заяв")],
         [KeyboardButton(text="👤 Зв’язок з оператором")],
-        [KeyboardButton(text="🤖 Юридичний GPT")],
-        [KeyboardButton(text="ℹ️ Про бота")]
+        [KeyboardButton(text="📞 Поділитись контактом", request_contact=True)]
     ],
     resize_keyboard=True
 )
-
